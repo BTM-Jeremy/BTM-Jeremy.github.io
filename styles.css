@@ -15,12 +15,21 @@ header {
     background-color: #115697;
     padding: 20px;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
+
 
 .header-container {
     max-width: 800px;
     margin: 0 auto;
 }
+
+.logo {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
 
 .page-title {
     color: white;
@@ -147,4 +156,37 @@ main {
 
 .incident-status.maintenance {
     color: #17a2b8;
+}
+
+/* Scheduled Maintenance section styles */
+.scheduled-maintenance {
+    margin-bottom: 40px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #115697;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    color: white;
+    font-size: 12px;
 }
