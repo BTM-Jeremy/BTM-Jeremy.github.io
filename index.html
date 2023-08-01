@@ -11,11 +11,12 @@
 <body>
     <header>
         <div class="header-container">
+            <img class="logo" src="https://static1.mysiteserver.net/Images/bluetone-media/site/template/btm-logo-v2.png" alt="BlueTone Media Logo">
             <h1 class="page-title">BlueTone Media Status Page</h1>
             <div class="contact-buttons">
                 <!-- Use Font Awesome icons for email and phone -->
                 <a href="mailto:support@bluetonemedia.com"><i class="fas fa-envelope"></i> Email Support</a>
-                <a href="tel:+1234567890"><i class="fas fa-phone"></i> Call Support</a>
+                <a href="tel:+19107952280"><i class="fas fa-phone"></i> Call Support</a>
             </div>
         </div>
     </header>
@@ -23,36 +24,31 @@
     <main>
         <section class="legend">
             <!-- Legend for status icons -->
-            <div class="legend-item">
-                <span title="Operational" class="incident-status operational"><i class="fas fa-check-circle"></i></span> Operational
-            </div>
-            <div class="legend-item">
-                <span title="Degraded Performance" class="incident-status degraded-performance"><i class="fas fa-exclamation-circle"></i></span> Degraded Performance
-            </div>
-            <div class="legend-item">
-                <span title="Partial Outage" class="incident-status partial-outage"><i class="fas fa-exclamation-triangle"></i></span> Partial Outage
-            </div>
-            <div class="legend-item">
-                <span title="Major Outage" class="incident-status major-outage"><i class="fas fa-times-circle"></i></span> Major Outage
-            </div>
-            <div class="legend-item">
-                <span title="Maintenance" class="incident-status maintenance"><i class="fas fa-tools"></i></span> Maintenance
-            </div>
+            <!-- ... Same as before ... -->
         </section>
+
+        <section class="scheduled-maintenance">
+            <h2>Scheduled Maintenance</h2>
+            <!-- Your scheduled maintenance incidents log goes here (accordion-style if desired) -->
+            <!-- Dummy data for demonstration purposes -->
+            <div class="incident">
+                <div class="incident-date">August 5, 2023, 2:00 AM (Eastern Time)</div>
+                <div class="incident-title">Server Upgrade</div>
+                <div class="incident-description">We will be performing a server upgrade to improve system performance.</div>
+                <div class="incident-statuses">
+                    <span title="Maintenance" class="incident-status maintenance"><i class="fas fa-tools"></i></span>
+                    Expected Completion: August 5, 2023, 4:00 AM (Eastern Time)
+                </div>
+            </div>
+            <!-- Add more scheduled maintenance incidents here -->
+        </section>
+
+        <hr class="section-divider">
 
         <section class="incident-section">
             <h2>Current Incidents</h2>
             <!-- Your current incidents log goes here (accordion-style if desired) -->
-            <div class="incident">
-                <div class="incident-date">August 1, 2023, 10:00 AM (Eastern Time)</div>
-                <div class="incident-title">Network Connectivity Issue</div>
-                <div class="incident-description">We are currently investigating a network connectivity issue that is affecting some of our services.</div>
-                <div class="incident-statuses">
-                    <span title="Degraded Performance" class="incident-status degraded-performance"><i class="fas fa-exclamation-circle"></i></span>
-                    Expected Resolution: August 2, 2023, 10:00 AM (Eastern Time)
-                </div>
-            </div>
-            <!-- Add more current incidents here -->
+            <!-- ... Same as before ... -->
         </section>
 
         <hr class="section-divider">
@@ -60,26 +56,15 @@
         <section class="incident-section">
             <h2>Past Incidents</h2>
             <!-- Dummy data for demonstration purposes -->
-            <div class="incident">
-                <div class="incident-date">August 2, 2023, 8:00 AM (Eastern Time)</div>
-                <div class="incident-title">Server Maintenance</div>
-                <div class="incident-description">We are performing scheduled server maintenance to enhance system performance.</div>
-                <div class="incident-statuses">
-                    <span title="Maintenance" class="incident-status maintenance"><i class="fas fa-tools"></i></span>
-                    Resolved: August 2, 2023, 9:30 AM (Eastern Time)
-                </div>
-            </div>
-            <div class="incident">
-                <div class="incident-date">July 30, 2023, 4:15 PM (Eastern Time)</div>
-                <div class="incident-title">Network Connectivity Issue</div>
-                <div class="incident-description">We experienced a temporary network connectivity issue that resulted in intermittent access to our services.</div>
-                <div class="incident-statuses">
-                    <span title="Operational" class="incident-status operational"><i class="fas fa-check-circle"></i></span>
-                    Resolved: July 31, 2023, 9:00 AM (Eastern Time)
-                </div>
-            </div>
-            <!-- Add more past incidents here -->
+            <!-- ... Same as before ... -->
         </section>
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <a class="footer-link" href="https://www.bluetonemedia.com" target="_blank">BlueTone Media</a>
+            <span class="footer-copyright">&copy; 2023 BlueTone Media. All rights reserved.</span>
+        </div>
+    </footer>
 </body>
 </html>
