@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #115697;
-    color: white;
+    background-color: #fff;
+    color: black; /* Set the body text to black */
 }
 
 header {
@@ -50,15 +50,35 @@ main {
     color: #115697;
 }
 
-/* Customize incident status icons */
-.incident-services {
+/* Legend styles */
+.legend {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    justify-content: center;
+    margin: 20px 0;
 }
 
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.legend-item .incident-status {
+    margin-right: 5px;
+}
+
+/* Incident styles */
+.incident-statuses {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Customize incident status icons */
 .incident-status {
-    margin-right: 10px;
+    margin-right: 5px;
     cursor: help;
     opacity: 0.7;
 }
@@ -75,7 +95,10 @@ main {
     color: #dc3545;
 }
 
+.incident-status.major-outage {
+    color: #dc3545;
+}
+
 .incident-status.maintenance {
     color: #17a2b8;
 }
-
