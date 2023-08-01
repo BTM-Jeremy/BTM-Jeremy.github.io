@@ -162,7 +162,9 @@ main {
 .scheduled-maintenance {
     margin-bottom: 40px;
 }
-
+.scheduled-maintenance h2 {
+    color: #115697
+}
 /* Footer styles */
 footer {
     background-color: #115697;
