@@ -19,7 +19,6 @@ header {
     align-items: center;
 }
 
-
 .header-container {
     max-width: 800px;
     margin: 0 auto;
@@ -29,7 +28,6 @@ header {
     max-width: 150px;
     margin-right: 20px;
 }
-
 
 .page-title {
     color: white;
@@ -53,7 +51,7 @@ header {
 /* Legend styles */
 .legend {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0;
 }
@@ -158,7 +156,6 @@ main {
     color: #17a2b8;
 }
 
-
 /* Footer styles */
 footer {
     background-color: #115697;
@@ -185,4 +182,60 @@ footer {
 .footer-copyright {
     color: white;
     font-size: 12px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .legend {
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+
+    .legend-item {
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .contact-buttons a {
+        font-size: 14px;
+        padding: 8px 15px;
+        margin: 3px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .incident-section h2 {
+        font-size: 20px;
+    }
+
+    .incident-date {
+        font-size: 14px;
+    }
+
+    .incident-title {
+        font-size: 18px;
+    }
+
+    .incident-description {
+        font-size: 14px;
+    }
+
+    .incident-statuses {
+        font-size: 16px;
+    }
 }
