@@ -158,13 +158,7 @@ main {
     color: #17a2b8;
 }
 
-/* Scheduled Maintenance section styles */
-.scheduled-maintenance {
-    margin-bottom: 40px;
-}
-.scheduled-maintenance h2 {
-    color: #115697
-}
+
 /* Footer styles */
 footer {
     background-color: #115697;
