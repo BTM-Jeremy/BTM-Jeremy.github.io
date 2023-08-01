@@ -21,9 +21,38 @@
     </header>
 
     <main>
+        <section class="legend">
+            <!-- Legend for status icons -->
+            <div class="legend-item">
+                <span title="Operational" class="incident-status operational"><i class="fas fa-check-circle"></i></span> Operational
+            </div>
+            <div class="legend-item">
+                <span title="Degraded Performance" class="incident-status degraded-performance"><i class="fas fa-exclamation-circle"></i></span> Degraded Performance
+            </div>
+            <div class="legend-item">
+                <span title="Partial Outage" class="incident-status partial-outage"><i class="fas fa-exclamation-triangle"></i></span> Partial Outage
+            </div>
+            <div class="legend-item">
+                <span title="Major Outage" class="incident-status major-outage"><i class="fas fa-times-circle"></i></span> Major Outage
+            </div>
+            <div class="legend-item">
+                <span title="Maintenance" class="incident-status maintenance"><i class="fas fa-tools"></i></span> Maintenance
+            </div>
+        </section>
+
         <section class="incident-section">
             <h2>Current Incidents</h2>
             <!-- Your current incidents log goes here (accordion-style if desired) -->
+            <div class="incident">
+                <div class="incident-date">August 1, 2023</div>
+                <div class="incident-title">Network Connectivity Issue</div>
+                <div class="incident-description">We are currently investigating a network connectivity issue that is affecting some of our services.</div>
+                <div class="incident-statuses">
+                    <span title="Degraded Performance" class="incident-status degraded-performance"><i class="fas fa-exclamation-circle"></i></span>
+                    Expected Resolution: August 2, 2023, 10:00 AM (UTC)
+                </div>
+            </div>
+            <!-- Add more current incidents here -->
         </section>
 
         <section class="incident-section">
@@ -33,20 +62,21 @@
                 <div class="incident-date">July 30, 2023</div>
                 <div class="incident-title">Network Connectivity Issue</div>
                 <div class="incident-description">We experienced a temporary network connectivity issue that resulted in intermittent access to our services.</div>
-                <div class="incident-services">
+                <div class="incident-statuses">
                     <span title="Operational" class="incident-status operational"><i class="fas fa-check-circle"></i></span>
-                    <span title="Degraded Performance" class="incident-status degraded-performance"><i class="fas fa-exclamation-circle"></i></span>
-                    <span title="Partial Outage" class="incident-status partial-outage"><i class="fas fa-exclamation-triangle"></i></span>
+                    Resolved: July 31, 2023, 12:30 PM (UTC)
                 </div>
             </div>
             <div class="incident">
                 <div class="incident-date">August 2, 2023</div>
                 <div class="incident-title">Server Maintenance</div>
                 <div class="incident-description">We are performing scheduled server maintenance to enhance system performance.</div>
-                <div class="incident-services">
+                <div class="incident-statuses">
                     <span title="Maintenance" class="incident-status maintenance"><i class="fas fa-tools"></i></span>
+                    Resolved: August 2, 2023, 8:00 AM (UTC)
                 </div>
             </div>
+            <!-- Add more past incidents here -->
         </section>
     </main>
 </body>
