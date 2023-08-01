@@ -50,4 +50,32 @@ main {
     color: #115697;
 }
 
-/* Add additional CSS styling for the accordion and other elements as desired */
+/* Customize incident status icons */
+.incident-services {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.incident-status {
+    margin-right: 10px;
+    cursor: help;
+    opacity: 0.7;
+}
+
+.incident-status.operational {
+    color: #28a745;
+}
+
+.incident-status.degraded-performance {
+    color: #ffc107;
+}
+
+.incident-status.partial-outage {
+    color: #dc3545;
+}
+
+.incident-status.maintenance {
+    color: #17a2b8;
+}
+
