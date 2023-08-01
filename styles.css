@@ -1,11 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+html, body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: black; /* Set the body text to black */
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: black;
+}
+
+/* Header styles */
 header {
     background-color: #115697;
     padding: 20px;
@@ -17,7 +22,8 @@ header {
     margin: 0 auto;
 }
 
-h1 {
+.page-title {
+    color: white;
     font-size: 28px;
     margin-bottom: 10px;
 }
@@ -33,21 +39,6 @@ h1 {
 
 .contact-buttons a:hover {
     background-color: #04689A;
-}
-
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.incident-section h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #115697;
 }
 
 /* Legend styles */
@@ -68,7 +59,62 @@ main {
     margin-right: 5px;
 }
 
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom style for section dividers */
+.section-divider {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+/* Incident section styles */
+.incident-section {
+    margin-bottom: 40px;
+}
+
+.incident-section h2 {
+    color: #115697;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 /* Incident styles */
+.incident {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.incident:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.incident-date {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.incident-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #115697;
+}
+
+.incident-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 .incident-statuses {
     display: flex;
     align-items: center;
