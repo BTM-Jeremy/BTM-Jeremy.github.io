@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body>
+
+<form action="https://bluetonemedia.com/FormProcess.aspx" method="post">
+    <!-- Add the create_account variable to indicate user creation -->
+    <input type="hidden" name="create_account" value="1">
+
+    <!-- User Information -->
+    <label for="fname">First Name:</label>
+    <input type="text" name="fname" required>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" name="lname" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" name="email" required>
+
+    <!-- Additional Fields (you can add more fields as needed) -->
+    <!-- <label for="mname">Middle Name:</label>
+    <input type="text" name="mname"> -->
+
+    <!-- Add other fields as needed based on the documentation -->
+
+    <!-- Security Access Level (Assuming an access level of 2) -->
+    <input type="hidden" name="access" value="2">
+
+    <!-- Submit Button -->
+    <input type="submit" value="Create Account">
+</form>
+
+</body>
+</html>
